@@ -2,24 +2,21 @@
 
 import 'package:flutter/material.dart';
 
-
+// 数据模型
 class Product {
   final String name;
   Product({this.name});
 }
 
+// 定义事件
 typedef void CartChangeCallBack(Product product, bool inCart);
 
-
+// 购物车item
 class ShoppingListItem extends StatelessWidget {
 
   ShoppingListItem({Product product, this.inCart, this.onCartChanged})
   :product = product,
   super(key: new  ObjectKey(product));
-
-//  ShoppingListItem({Product product, this.inCart, this.onCartChanged})
-//      : product = product,
-//        super(key: new ObjectKey(product));
 
   final Product product;
   final bool inCart;
