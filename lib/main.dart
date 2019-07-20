@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_play/pages/tutorial_counter.dart';
+import 'package:flutter_play/pages/tutorial_counterv2.dart';
+import 'package:flutter_play/pages/tutorial_materia.dart';
+import 'package:flutter_play/pages/tutorial_scaffold.dart';
 import 'package:flutter_play/widgets/bottom_navigation_widget.dart';
 import 'package:flutter_play/widgets/list_view_demo.dart';
 import 'package:flutter_play/widgets/wechat_me_page.dart';
@@ -17,7 +21,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Samples',
       theme: ThemeData.light(),
-      home: WeChatMePage(),
+      home: Scaffold(
+        appBar: AppBar(title: Text('标题'),),
+        body: CounterV2(),
+      ),
     );
   }
 }

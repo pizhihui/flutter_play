@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_play/pages/home_screen.dart';
-import 'package:flutter_play/pages/airplay_screen.dart';
-import 'package:flutter_play/pages/email_screen.dart';
-import 'package:flutter_play/pages/pages_screen.dart';
+import 'package:flutter_play/screen/home_screen.dart';
+import 'package:flutter_play/screen/airplay_screen.dart';
+import 'package:flutter_play/screen/email_screen.dart';
+import 'package:flutter_play/screen/pages_screen.dart';
 
 
 class BottomNavigationWidget extends StatefulWidget {
