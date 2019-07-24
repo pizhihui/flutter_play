@@ -9,6 +9,8 @@ import 'package:flutter_play/widgets/list_view_demo.dart';
 import 'package:flutter_play/widgets/wechat_me_page.dart';
 
 import 'chatdemo/chat_screen.dart';
+import 'layout/expanded_demo.dart';
+import 'layout/flexible_demo.dart';
 import 'littlecart/shop_list_item.dart';
 
 //void main() => runApp(MyApp());
