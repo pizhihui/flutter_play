@@ -12,6 +12,7 @@ import 'chatdemo/chat_screen.dart';
 import 'layout/expanded_demo.dart';
 import 'layout/flexible_demo.dart';
 import 'littlecart/shop_list_item.dart';
+import 'package:flutter/foundation.dart';
 
 //void main() => runApp(MyApp());
 
@@ -19,11 +20,25 @@ void main(){
   runApp(new MyAPP());
 }
 
+final ThemeData kIOSTheme = new ThemeData(
+  primarySwatch: Colors.orange,
+  primaryColor: Colors.grey[100],
+  primaryColorBrightness: Brightness.light,
+);
+
+final ThemeData kDefaultTheme = new ThemeData(
+  primarySwatch: Colors.purple,
+  accentColor: Colors.orangeAccent[400],
+);
+
 class MyAPP extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "FriendlyChat",
+      theme: defaultTargetPlatform == TargetPlatform.iOS         //new
+          ? kIOSTheme                                              //new
+          : kDefaultTheme,
       home: ChatScreen(),
     );
   }
